@@ -1,0 +1,36 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Overview",
+      "transformation": {
+        "fields": [
+          "provider",
+          "product_name",
+          "product_type",
+          "apr",
+          "fees",
+          "term",
+          "eligibility",
+          "sample_monthly_payment",
+          "source_url"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "provider": { "label": "Provider", "format": "text" },
+          "product_name": { "label": "Product", "format": "text" },
+          "product_type": { "label": "Type", "format": "text" },
+          "apr": { "label": "APR / Rate", "format": "text" },
+          "fees": { "label": "Fees", "format": "text" },
+          "term": { "label": "Term", "format": "text" },
+          "eligibility": { "label": "Eligibility", "format": "text" },
+          "sample_monthly_payment": { "label": "Sample payment", "format": "text" },
+          "source_url": { "label": "Source URL", "format": "link" }
+        }
+      }
+    }
+  }
+}

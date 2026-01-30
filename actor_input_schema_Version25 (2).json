@@ -1,0 +1,36 @@
+{
+  "title": "Input schema of the Alternative credit data scraper",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startUrls": {
+      "title": "Start URLs",
+      "type": "array",
+      "description": "Seed URLs to start crawling from (provider homepages, product listing pages, comparison sites).",
+      "editor": "requestListSources",
+      "prefill": [
+        {
+          "url": "https://example-finance.com/loans"
+        }
+      ]
+    },
+    "maxRequestsPerCrawl": {
+      "title": "Max Requests per Crawl",
+      "type": "integer",
+      "description": "Maximum number of requests that can be made by this crawler.",
+      "default": 200
+    },
+    "followInternalOnly": {
+      "title": "Follow internal links only",
+      "type": "boolean",
+      "description": "If true, only follow links within the same host as each start URL.",
+      "default": true
+    },
+    "redactPII": {
+      "title": "Redact PII",
+      "type": "boolean",
+      "description": "If true, the Actor will attempt to redact or skip personally-identifiable information (recommended).",
+      "default": true
+    }
+  }
+}

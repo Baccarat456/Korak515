@@ -1,0 +1,17 @@
+{
+  "actorSpecification": 1,
+  "name": "Alternative credit data scraper",
+  "title": "Alternative credit data scraper",
+  "description": "Scraper to collect alternative credit product metadata (BNPL, fintech loans, microloans, pay-later offers) and public pricing/eligibility information.",
+  "version": "0.0",
+  "meta": {
+    "templateId": "ai-generated-actor",
+    "generatedBy": "Gpt-4o-mini"
+  },
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "dockerfile": "../Dockerfile"
+}
